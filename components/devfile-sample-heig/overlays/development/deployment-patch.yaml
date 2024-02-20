@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-heig
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr714-0075-0038-tenant/tkrw-pr714-0075-0038-app/devfile-sample-heig@sha256:5862e5591228c8a37dd8456b0703a85abf8e5c50ecfd52a8c9c722e48777cef6
+        name: my-nodejs
+        resources: {}
+status: {}
